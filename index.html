@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <!-- TODO: Byt sidtitel till rapportens namn -->
+  <title>Start – Brott_och_trygghet</title>
+
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+
+  <!-- TODO: Länka till din globala sajt-CSS (byt filnamn/sökväg vid behov) -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- TODO: Landningssidans extra-stil (kan tas bort om allt ligger i styles.css) -->
+  <link rel="stylesheet" href="landing.css">
+
+  
+</head>
+
+<!-- TIP: body class används i CSS för att styra just landningssidan -->
+<body class="landing">
+
+  <!-- ================== HERO ==================
+       TODO: Ändra rubrik, ingress och knappar (text + mål-länkar).
+       Länkarna ska peka på genererade sidor, t.ex. inledning.html (från inledning.qmd)
+  ============================================ -->
+  <section class="hero">
+    <!-- TODO: Rapportnamn + år -->
+    <h1>Läget i Länet Rapport - Brott och trygghet</h1>
+
+    <!-- TODO: Kort ingress/”pitch” för rapporten (1–2 meningar) -->
+    <p>Denna rapport sammanställer och analyserar indikatorer som belyser säkerhet, olyckor och räddningstjänstens insatser på kommunnivå. När data studeras för kommunerna med liten folkmängd så ska inte variansen och trender mellan åren tas på lika stort allvar, framförallt då det totala antalet är väldigt lågt. När det sedan undersöks per 100 000 så kan en, liten skillnad i antal, göra en stor skillnad på resultatet.
+</p>
+  </section>
+
+  <!-- =============== KORT/KORTLISTA =================
+       TODO: Lägg till ett "card"-block per delkapitel/tema.
+       - h3: kort rubrik
+       - första p: kort beskrivande text
+       - länk: pekar till respektive undersida (t.ex. arbetsmarknaden.html)
+       Tips: duplicera <div class="card">…</div> för fler rutor.
+  ==================================================== -->
+  <div class="wrap">
+    <div class="grid">
+      <!-- ====== KORT 2:  ====== -->
+      <div class="card">
+        <!-- TODO: Delrubrik -->
+        <h3>Våldsbrott</h3>
+        <!-- TODO: Kort beskrivning av vad läsaren hittar här -->
+        <p>Sammanfattning av Brås indikatorer</p>
+        <!-- TODO: Länk till sidan (se till att filen genereras av Quarto) -->
+        <p><a href="vald_indikator.html">Öppna →</a></p>
+      </div>
+      
+      
+      <!-- ====== KORT 3:  ====== -->
+      <div class="card">
+        <!-- TODO: Delrubrik -->
+        <h3>Räddningstjänst</h3>
+        <!-- TODO: Kort beskrivning av vad läsaren hittar här -->
+        <p>Sammanfattning av Brås indikatorer</p>
+        <!-- TODO: Länk till sidan (se till att filen genereras av Quarto) -->
+        <p><a href="raddningstjanst.html">Öppna →</a></p>
+      </div>
+      
+      <!-- ====== KORT 5:  ====== -->
+      <div class="card">
+        <!-- TODO: Delrubrik -->
+        <h3>Trygghet</h3>
+        <!-- TODO: Kort beskrivning av vad läsaren hittar här -->
+        <p>Sammanfattning av Brås indikatorer</p>
+        <!-- TODO: Länk till sidan (se till att filen genereras av Quarto) -->
+        <p><a href="trygghet.html">Öppna →</a></p>
+      </div>
+      
+      <!-- ====== KORT 5:  ====== -->
+      <div class="card">
+        <!-- TODO: Delrubrik -->
+        <h3>Övriga brott</h3>
+        <!-- TODO: Kort beskrivning av vad läsaren hittar här -->
+        <p>Sammanfattning av Brås indikatorer</p>
+        <!-- TODO: Länk till sidan (se till att filen genereras av Quarto) -->
+        <p><a href="skade_stold_trafik.html">Öppna →</a></p>
+      </div>
+ 
+
+    </div>
+  </div>
+
+  <!-- ============== EXTRA TIPS =================
+    • Filnamn:
+      - Om du kör Quarto: inledning.qmd → inledning.html vid render.
+      - Säkerställ att länkarna ovan matchar de genererade .html-filerna.
+    • Navigation:
+      - Om du har en global navbar via _quarto.yml används den parallellt.
+    • Bilder i hero:
+      - Sätt bakgrundsbild via CSS i landing.css, t.ex.:
+        .landing .hero { background: url('img/hero.jpg') center/cover no-repeat; }
+    • Footers/loggor:
+      - Lägg längst ned innan </body> eller styra via CSS.
+  ============================================== -->
+
+</body>
+</html>
+
